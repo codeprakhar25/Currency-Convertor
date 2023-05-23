@@ -15,13 +15,17 @@ import {useEffect, useState} from 'react'
 import { Text, View,StyleSheet,Image,Pressable,ScrollView } from 'react-native'
 import Header from '../../Components/Header'
 import Loading from '../../Components/Loading'
+import LinearGradient from 'react-native-linear-gradient'
 
 const Home = ({navigation}) => {
 
 return (
     <View>
           <Header text="HOME"/>
-          <Text style={{ fontSize: 24,  alignContent: "center", fontWeight: 600, fontFamily: 'Quicksand',width:"90%",marginLeft: "5%",marginTop:"5%"}}> Know the currency and currency conversion rates in seconds </Text> 
+          <LinearGradient colors={["#0F623D","#28863A"]} style={styles.profilecontainer}>
+          <Text style={{ fontSize: 24,  alignContent: "center", fontWeight: 600, fontFamily: 'Quicksand',width:"90%",marginLeft: "5%",marginTop:"5%",color:"#FFFFFF"}}> Know the currency and currency conversion rates in seconds </Text> 
+
+          </LinearGradient>
 
 <View style={styles.TabsContainer}>
 <Pressable style={styles.pressContainer} onPress={()=>{

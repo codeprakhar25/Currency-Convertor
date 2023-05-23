@@ -76,7 +76,7 @@ const RateTwo = () => {
 {
    data.results  ?
     <>
-    <Text style={{ fontSize: 24,  alignContent: "center", fontWeight: 600, fontFamily: 'Quicksand',width:"90%",marginLeft: "5%",marginTop:"5%"}}> Know the rate of 1 USD in {currencycode}</Text>
+    <Text style={{ fontSize: 24,  alignContent: "center", fontWeight: 600, fontFamily: 'Quicksand',width:"90%",marginLeft: "5%",marginTop:"5%"}}> The rate of 1 USD in {currencycode}</Text>
     <Text style={{ fontSize: 24,  alignContent: "center", fontWeight: 600, fontFamily: 'Quicksand',width:"90%",marginLeft: "5%",marginTop:"5%"}}>{content[0].substring(7, content[0].length - 1)}</Text>
     </>
     :
